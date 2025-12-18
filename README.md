@@ -46,7 +46,7 @@ O projeto foi estruturado seguindo os pilares da **Programação Orientada a Obj
 
 1. **Clone o repositório:**
 ```bash
-git clone https://github.com/seu-usuario/petcare-system.git
+git clone git@github.com:sCesar-dev/Veterinary-clinic.git
 
 ```
 
@@ -57,4 +57,4 @@ git clone https://github.com/seu-usuario/petcare-system.git
 ---
 
 Desenvolvido por **Samuel Cesar, Isabel Souza e Caio Lopes**
-[LinkedIn](https://www.linkedin.com/in/seu-perfil) | [Curriculo](https://seu-portfolio.com)
+[LinkedIn](https://www.linkedin.com/in/samuel-cesar-193275219/) | [Curriculo](https://drive.google.com/drive/folders/18tICYCLwsoPX-RiXlsOtCtOEBoI_dBR2?usp=sharing)
