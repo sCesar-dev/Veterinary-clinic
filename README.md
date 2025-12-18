@@ -1,4 +1,5 @@
 # 🐾 PetCare System - Sistema de Gestão para Clínicas Veterinárias em Java
+***English version: [README.en.md](README.en.md)***
 
 ## Visão Geral
 
