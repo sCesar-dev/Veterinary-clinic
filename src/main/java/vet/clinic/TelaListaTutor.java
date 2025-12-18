@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package vet.clinic;
+package main.java.vet.clinic;
 
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Caiyo
+ * @author Samuel
  */
 public class TelaListaTutor extends javax.swing.JPanel {
     private DefaultTableModel model;

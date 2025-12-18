@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package vet.clinic;
+package main.java.vet.clinic;
 
 import javax.swing.JOptionPane;
 
@@ -10,12 +10,12 @@ import javax.swing.JOptionPane;
  *
  * @author Caiyo
  */
-public class TelaCadVacina extends javax.swing.JPanel {
+public class TelaCadEspecialidade extends javax.swing.JPanel {
     private TelaPrincipal telaPrincipal;
     /**
-     * Creates new form TelaCadVacina
+     * Creates new form TelaCadEspecialidade
      */
-    public TelaCadVacina(TelaPrincipal telaPrincipal) {
+    public TelaCadEspecialidade(TelaPrincipal telaPrincipal) {
         this.telaPrincipal = telaPrincipal;
         initComponents();
     }
@@ -29,13 +29,13 @@ public class TelaCadVacina extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        cxNome = new javax.swing.JTextField();
+        cxTipo = new javax.swing.JTextField();
         cxValor = new javax.swing.JFormattedTextField();
-        jLabel2 = new javax.swing.JLabel();
-        cxMeses = new javax.swing.JFormattedTextField();
-        jLabel3 = new javax.swing.JLabel();
+
+        jLabel2.setText("Valor:");
 
         jButton1.setText("Cadastrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -44,21 +44,15 @@ public class TelaCadVacina extends javax.swing.JPanel {
             }
         });
 
-        jLabel1.setText("Nome");
+        jLabel1.setText("Tipo:");
 
-        cxNome.addActionListener(new java.awt.event.ActionListener() {
+        cxTipo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cxNomeActionPerformed(evt);
+                cxTipoActionPerformed(evt);
             }
         });
 
         cxValor.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
-
-        jLabel2.setText("Valor:");
-
-        cxMeses.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
-
-        jLabel3.setText("Meses de validade");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -67,13 +61,11 @@ public class TelaCadVacina extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3)
                     .addComponent(cxValor)
-                    .addComponent(cxNome, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                    .addComponent(cxTipo, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2)
-                    .addComponent(jButton1)
-                    .addComponent(cxMeses))
+                    .addComponent(jButton1))
                 .addContainerGap(213, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -82,25 +74,21 @@ public class TelaCadVacina extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cxNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cxTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cxValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cxMeses, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(141, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if (cxNome.getText().trim().isEmpty() ||
-            cxValor.getText().trim().isEmpty() ||
-            cxMeses.getText().trim().isEmpty())  {
+        // validação dos campos obrigatórios
+        if (cxTipo.getText().trim().isEmpty() ||
+            cxValor.getText().trim().isEmpty()) {
 
             JOptionPane.showMessageDialog(this,
                 "Por favor, preencha todos os campos!",
@@ -118,50 +106,39 @@ public class TelaCadVacina extends javax.swing.JPanel {
                 JOptionPane.ERROR_MESSAGE);
             return;
         }
-        
-        Number valorMeses = (Number) cxMeses.getValue();
-        if (valorMeses == null) {
-            JOptionPane.showMessageDialog(this,
-                "Valor inválido!",
-                "Erro de Formato",
-                JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-      
-        Vacina vac = new Vacina(
-            cxNome.getText().trim(),
-            valorNumero.doubleValue(),
-            valorMeses.intValue()
+
+        // 3) cria o objeto Especialidade
+        Especialidade esp = new Especialidade(
+            cxTipo.getText().trim(),
+            valorNumero.doubleValue()
         );
 
         
-        telaPrincipal.getSistema().getVacinas().add(vac);
+        telaPrincipal.getSistema().getEspecialidades().add(esp);
 
        
-        cxNome.setText("");
+        cxTipo.setText("");
         cxValor.setValue(null);
-        cxMeses.setValue(null);
 
         
         JOptionPane.showMessageDialog(this,
-            "Vacina cadastrada com sucesso!",
+            "Especialidade cadastrada com sucesso!",
             "Concluído",
             JOptionPane.INFORMATION_MESSAGE);
         telaPrincipal.mostrarTela("telaMenu");
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void cxNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cxNomeActionPerformed
+    private void cxTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cxTipoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cxNomeActionPerformed
+
+    }//GEN-LAST:event_cxTipoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JFormattedTextField cxMeses;
-    private javax.swing.JTextField cxNome;
+    private javax.swing.JTextField cxTipo;
     private javax.swing.JFormattedTextField cxValor;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

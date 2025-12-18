@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package vet.clinic;
+package main.java.vet.clinic;
 
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author zzsjzz
+ * @author Samuel
  */
 public class TelaCadFuncionario extends javax.swing.JPanel {
     

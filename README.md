@@ -58,7 +58,7 @@ git clone git@github.com:sCesar-dev/Veterinary-clinic.git
 
 
 2. **Abra o projeto:** Importe a pasta do projeto na sua IDE de preferência (recomendado: NetBeans ou IntelliJ IDEA).
-3. **Execute:** Localize a classe principal `Main.java` no pacote `src/vet/clinic` e execute o arquivo.
+3. **Execute:** Localize a classe principal `Main.java` no pacote `src/main/java/vet/clinic` e execute o arquivo.
 
 ---
 
