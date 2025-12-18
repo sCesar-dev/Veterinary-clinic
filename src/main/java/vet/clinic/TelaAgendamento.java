@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
-package vet.clinic;
+package main.java.vet.clinic;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -17,7 +13,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author isabel
+ * @author Samuel
  */
 public class TelaAgendamento extends javax.swing.JPanel {
     TelaPrincipal telaPrincipal;

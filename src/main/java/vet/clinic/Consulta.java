@@ -1,4 +1,4 @@
-package vet.clinic;
+package main.java.vet.clinic;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

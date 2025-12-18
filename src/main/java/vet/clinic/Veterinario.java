@@ -1,4 +1,4 @@
-package vet.clinic;
+package main.java.vet.clinic;
 
 public class Veterinario extends Funcionario{
     private Especialidade especialidade;

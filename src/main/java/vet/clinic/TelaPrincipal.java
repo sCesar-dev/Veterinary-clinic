@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package vet.clinic;
+package main.java.vet.clinic;
 import javax.swing.*;
 import java.awt.*;
 import java.time.LocalDate;
@@ -14,7 +14,7 @@ import java.util.Locale;
 
 /**
  *
- * @author zzsjzz
+ * @author Samuel
  */
 public class TelaPrincipal extends javax.swing.JFrame {
     CardLayout cardLayout;

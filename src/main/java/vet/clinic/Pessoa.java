@@ -1,4 +1,4 @@
-package vet.clinic;
+package main.java.vet.clinic;
 
 class Pessoa{
     private String nome, cpf, email, telefone;
