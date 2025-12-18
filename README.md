@@ -36,10 +36,16 @@ O projeto foi estruturado seguindo os pilares da **Programação Orientada a Obj
 ## 📸 Screenshots
 
 * *Tela de Menu Principal*
+<img width="659" height="481" alt="Screenshot from 2025-12-18 14-56-04" src="https://github.com/user-attachments/assets/d59a7430-1583-4237-9cef-c0bbd5391d00" />
 
 * *Cadastro de Animais*
+<img width="659" height="481" alt="Screenshot from 2025-12-18 14-58-53" src="https://github.com/user-attachments/assets/f7632678-7d63-4586-9a68-4d1c703548f7" />
+<img width="659" height="481" alt="Screenshot from 2025-12-18 15-01-54" src="https://github.com/user-attachments/assets/9cbefcdb-5655-441a-8140-de075b1222e5" />
 
 * *Prontuário Médico*
+<img width="659" height="481" alt="Screenshot from 2025-12-18 15-02-09" src="https://github.com/user-attachments/assets/b4bb61f4-9126-469d-98ce-9b018116b758" />
+<img width="659" height="481" alt="Screenshot from 2025-12-18 15-04-11" src="https://github.com/user-attachments/assets/4bfea19b-00b3-4d29-aa13-71babffc4468" />
+<img width="659" height="481" alt="Screenshot from 2025-12-18 15-04-24" src="https://github.com/user-attachments/assets/a27ae9fc-4e95-49b4-bac9-aa76b845a427" />
 
 
 ## ▶️ Como Executar o Projeto
